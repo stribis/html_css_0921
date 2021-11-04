@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block vs. Inline vs. Inline-Block</title>
+  <style>
+    body {
+      background: #222;
+      color: white;
+    }
+
+    .container {
+      border: solid 2px white;
+      width: 1000px;
+      height: 600px;
+    }
+
+    .box {
+      background : red;
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+    }
+
+    .box.two {
+      background: blue;
+    }
+
+    .red {
+      color: red;
+      background: blue;
+    }
+
+    .three{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box two">Box 2</div>
+    <div class="box three">Box 3</div>
+    <p>Lorem ipsum <span class="red">dolor</span> sit amet consectetur adipisicing elit. <img src="http://placekitten.com/300/300" alt="Cat"> Molestiae, laborum veritatis beatae delectus repudiandae velit?</p>
+  </div>
+</body>
+</html>
