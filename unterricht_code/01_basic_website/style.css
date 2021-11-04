@@ -36,3 +36,24 @@ nav a {
 nav a:hover {
   color: hotpink;
 }
+
+/* header */
+
+header {
+  min-height: 80vh;
+  /* background: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px black;
+}
+
+.cats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
