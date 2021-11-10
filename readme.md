@@ -1,4 +1,4 @@
 # HTML CSS Lesson Material
 ### WDD 921
 
-* [Slides in Canvas](https://login.sae.edu)
+* [Lesson Slides](https://stribis.github.io/slides_html_css/)
