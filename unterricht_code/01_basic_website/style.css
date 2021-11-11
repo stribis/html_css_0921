@@ -41,7 +41,7 @@ nav a:hover {
 
 header {
   min-height: 80vh;
-  /* background: orange; */
+  background: orange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,9 +52,24 @@ header > h1 {
   text-shadow: 2px 2px black;
 }
 
+
 .cats {
+  margin: 3rem 0 3rem 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
 
+.cats > .cat {
+  width: 400px;
+  background: #777;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  margin: 3rem 0;
+  text-align: center;
 }

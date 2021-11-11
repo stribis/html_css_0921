@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  color: #333;
+  height: 200vh;
+}
+
+.container {
+  margin: 5rem auto;
+  border: solid 1px red;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.box {
+  border: 1px dashed white;
+  width: 100px;
+  height: 100px;
+}
+
+.static {
+  background: lightblue;
+}
+
+.relative {
+  background: lightcoral;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.absolute {
+  background: lightgreen;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.fixed {
+  background: lightslategrey;
+  position: fixed;
+  left: 10px;
+  top: 100px;
+}
