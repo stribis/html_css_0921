@@ -1,6 +1,8 @@
 /* 
  01: Reset
  02: Navigation
+ 03: Main Header
+ 04: About Section
 */
 
 
@@ -17,6 +19,7 @@
 body {
   background: #000;
   color: white;
+  font-family: 'Indie Flower', cursive;
 }
 
 /* 02: Navigation */
@@ -45,4 +48,71 @@ nav > ul a {
   text-decoration: none;
   color: #ff4069;
   font-size: 1.8rem;
+}
+
+nav > ul a:hover {
+  text-decoration: underline;
+}
+
+/* 03. Main Header */
+
+header {
+  min-height: 90vh;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .header-title {
+  background: #ff4069;
+  padding: 1.8rem 1.6rem;
+  border: solid 2px black;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 2.6rem;
+}
+
+header p > span {
+  color: #ffd171;
+}
+
+/* 04: About Section */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: white;
+  padding: 2rem;
+}
+
+.box h3 {
+  font-size: 2rem;
+  color: #ffd171;
+  text-shadow: 2px 2px #ff4069;
+}
+
+.box ul {
+  background: black;
+  color: #ff4069;
+  border: 2px #ff4069 solid;
 }
