@@ -1,0 +1,50 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+
+body {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 2rem;
+  /* border: solid 1px black; */
+}
+
+#table_1 th {
+  background: #222;
+  color: white;
+}
+
+td, th {
+  border: solid 1px black;
+  padding: 0.6rem 0.5rem;
+}
+
+#table_1 tr:nth-child(even){
+  background: #777;
+}
+
+.lunch{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#table_3 td {
+  width: 50px;
+  height: 50px;
+}
+
+#table_3 tr:nth-child(even) td:nth-child(odd) {
+  background: black;
+}
+#table_3 tr:nth-child(odd) td:nth-child(even) {
+  background: black;
+}

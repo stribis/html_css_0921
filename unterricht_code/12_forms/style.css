@@ -1,0 +1,57 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom left, purple, hotpink);
+  font-family: sans-serif;
+}
+
+/* Form */
+
+form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem;
+  border-radius: 0.6rem;
+  min-width: 500px;
+}
+
+label {
+  margin-top: 2rem;
+
+}
+
+input, textarea {
+  padding: 0.5rem 0.7rem;
+  width: 100%;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.6rem 0.8rem;
+  color: white;
+  background: purple;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  border: none;
+}
+
+input:focus {
+  background: hotpink;
+}
+
+form > div {
+  display: flex;
+  align-items: center;
+}
