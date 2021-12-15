@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation & Transition</title>
+  <style>
+    /* General */
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 1rem;
+      background: red;
+    }
+
+    body {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .transition, .animation {
+      width: 50%;
+    }
+    /* Transition */
+    .transition .box {
+      transition: 2s;
+    }
+    .transition .background:hover {
+      background: blue;
+    }
+    .transition .move:hover {
+      background: yellow;
+      transform: translateX(200px);
+    }
+    .transition .rotate:hover {
+      transform: rotate(90deg);
+    }
+
+    /* Animation */
+    .animation .background {
+      animation: changeBackground 2s;
+    }
+    .animation .move {
+      animation: moveBox 2s;
+    }
+    .animation .rotate {
+      animation: rotateBox 2s;
+    }
+
+    @keyframes changeBackground {
+      to {
+        background: blue;
+      }
+    }
+    @keyframes moveBox {
+      to {
+        background: yellow;
+        transform: translateX(200px);
+      }
+    }
+    @keyframes rotateBox {
+      to {
+        transform: rotate(90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="transition">
+    <p>Transition: Color Change</p>      
+    <div class="box background"></div>
+    <p>Transition: Move Box</p>    
+    <div class="box move"></div>
+    <p>Transition: Rotate Box</p>      
+    <div class="box rotate"></div>
+  </div>
+
+  <div class="animation">
+    <p>Animation: Color Change</p>      
+    <div class="box background"></div>
+    <p>Animation: Move Box</p>    
+    <div class="box move"></div>
+    <p>Animation: Rotate Box</p>      
+    <div class="box rotate"></div>
+  </div>
+
+</body>
+</html>
